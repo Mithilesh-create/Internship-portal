@@ -1,33 +1,61 @@
 <?php
-$title = "Login";
+$title = "Dashboard";
+$style = "./index.css";
+$script = '<script src="https://accounts.google.com/gsi/client" async defer></script>';
 include_once("../../components/head.php");
 ?>
-<body class="text-center">
 
-    <main class="form-signin w-100 m-auto">
-        <form>
-            <img class="mb-4" src="../../assets/logo.jpeg" alt="" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">PCE Internship Portal</h1>
+<script>
+    function handleCredentialResponse(response) {
+        console.log("Encoded JWT ID token: " + response.credential);
+    }
+    window.onload = function () {
+        google.accounts.id.initialize({
+            client_id: "YOUR_GOOGLE_CLIENT_ID",
+            callback: handleCredentialResponse
+        });
+        google.accounts.id.renderButton(
+            document.getElementById("buttonDiv"),
+            { theme: "outline", size: "large" }
+        );
+        google.accounts.id.prompt();
+    }
+</script>
 
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Username</label>
+<body>
+    <div class="outerGrid">
+        <div class="Main">
+            <div class="first">
+                <img src="../../assets/logo.jpeg" class="logo" alt="...">
             </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
+            <div class="second">
+                <div class="imageContainer">
+                    <img src="../../assets/College.png" class="image1" alt="...">
+                    <img src="../../assets/Google.png" class="image2" alt="...">
+                </div>
+                <div class="signInText">
+                    <p class="pceTitle">PCE Internship Portal</p>
+                    <p class="mailDesc">
+                        Sign in with Student MES Account Only
+                    </p>
+                </div>
+                <div class="signIn">
+                    <div id="buttonDiv"></div>
+                </div>
             </div>
+        </div>
 
-            <a href="#" class="w-100 btn btn-lg btn-warning mb-3" type="submit">Sign in</a>
-            <a href="../student/" class="w-100 btn btn-lg btn-primary text-light">
-                <i class="bi bi-google text-green"></i>
-                Google Sign in
-            </a>
-            <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
-        </form>
-    </main>
+
+    </div>
+    <!-- <div class="">
+
+        
+
+
+        
+
+    </div> -->
+
 </body>
 
 </html>
-
-
