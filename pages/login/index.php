@@ -1,5 +1,5 @@
 <?php
-$title = "Dashboard";
+$title = "Login";
 $style = "./index.css";
 $script = '<script src="https://accounts.google.com/gsi/client" async defer></script>';
 include_once("../../components/head.php");
