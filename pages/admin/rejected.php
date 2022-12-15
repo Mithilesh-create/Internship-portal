@@ -1,6 +1,6 @@
 <?php
 $title = "Dashboard";
-$style = "./styles/previous.css";
+$style = "./styles/studentApplication.css";
 include_once("../../components/head.php");
 ?>
 
@@ -9,7 +9,7 @@ include_once("../../components/head.php");
     include_once("../../components/navbar/index.php");
     ?>
     <div class="container my-2 greet">
-        <p>Previous Applications</p>
+        <p>Rejected Applications</p>
     </div>
     <div class="container mt-5 table-responsive-sm">
         <table class="table table-bordered table-dark table-sm">
@@ -17,8 +17,12 @@ include_once("../../components/head.php");
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Company</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">Applied On</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Rejected On</th>
                     <th scope="col">Comment</th>
                 </tr>
             </thead>
@@ -34,11 +38,24 @@ include_once("../../components/head.php");
                         18/10/2022
                     </td>
                     <td class="pt-3">
-                        Pending
+                        18/10/2022
                     </td>
-                    <td class="py-3">
-                        Please collect the approval letter from office
+                    <td class="pt-3">
+                        18/10/2022
                     </td>
+                    <td class="pt-3">
+                        WFH
+                    </td>
+                    <td class="pt-3">
+                        SE-ECS
+                    </td>
+                    <td class="pt-3 ">
+                        18/10/2022
+                    </td>
+                    <td class="pt-3 ">
+                        Working Date comes during examination
+                    </td>
+                   
                 </tr>
                 <tr class="table-light">
                     <th class="pt-3" scope="row">
@@ -51,73 +68,29 @@ include_once("../../components/head.php");
                         18/10/2022
                     </td>
                     <td class="pt-3">
-                        Pending
-                    </td>
-                    <td class="py-3">
-                        Please collect the approval letter from office
-                    </td>
-                </tr>
-                <tr class="table-light">
-                    <th class="pt-3" scope="row">
-                        14
-                    </th>
-                    <td class="pt-3">
-                        Mark Industries pvt. ltd
+                        18/10/2022
                     </td>
                     <td class="pt-3">
                         18/10/2022
                     </td>
                     <td class="pt-3">
-                        Pending
-                    </td>
-                    <td class="py-3">
-                        Please collect the approval letter from office
-                    </td>
-                </tr>
-                <tr class="table-light">
-                    <th class="pt-3" scope="row">
-                        14
-                    </th>
-                    <td class="pt-3">
-                        Mark Industries pvt. ltd
+                        WFH
                     </td>
                     <td class="pt-3">
+                        SE-ECS
+                    </td>
+                    <td class="pt-3 ">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
-                        Pending
+                    <td class="pt-3 ">
+                        Working Date comes during examination
                     </td>
-                    <td class="py-3">
-                        Please collect the approval letter from office
-                    </td>
-                </tr>
-                <tr class="table-light">
-                    <th class="pt-3" scope="row">
-                        14
-                    </th>
-                    <td class="pt-3">
-                        Mark Industries pvt. ltd
-                    </td>
-                    <td class="pt-3">
-                        18/10/2022
-                    </td>
-                    <td class="pt-3">
-                        Pending
-                    </td>
-                    <td class="py-3">
-                        Please collect the approval letter from office
-                    </td>
+                  
                 </tr>
 
             </tbody>
-
         </table>
-
     </div>
-
-
-
-
 </body>
 
 </html>
