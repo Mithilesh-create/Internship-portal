@@ -1,8 +1,12 @@
+<?php
+$image =  "../../assets/College.png"
+    ?>
+
 <div class="main">
     <div class="first">
         <div class="outer">
             <div class="logo">
-                <img src="../../assets/College.png" class="image1" alt="...">
+                <img src=<?php echo $image ?> class="image1" alt="...">
             </div>
             <div class="name">
                 <p class="pce">PILLAI COLLEGE OF ENGINEERING</p>

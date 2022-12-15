@@ -15,14 +15,15 @@ include_once("../../components/head.php");
         <div class="row mx-auto">
             <div class="col mt-3">
                 <a href="./new.php" class="btn btn-primary btn-lg col-md-12 p-sm-4" role="button">New
-                    Application</a>
+                    Announcement</a>
             </div>
             <div class="col my-3">
                 <a href="./previous.php" class="btn btn-warning btn-lg col-md-12 p-sm-4" role="button">Previous
-                    Applications</a>
+                    Announcements</a>
             </div>
         </div>
     </div>
+
 
     <?php
     include_once("../../components/announcement/index.php");

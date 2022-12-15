@@ -1,33 +1,37 @@
 <?php
-$title = "Login";
+$title = "Dashboard";
+$style = "./index.css";
 include_once("../../components/head.php");
 ?>
-<body class="text-center">
 
-    <main class="form-signin w-100 m-auto">
-        <form>
-            <img class="mb-4" src="../../assets/logo.jpeg" alt="" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">PCE Internship Portal</h1>
+<body>
+    <?php
+    include_once("../../components/navbar/index.php");
+    ?>
 
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Username</label>
+    <div class="container text-center">
+        <div class="row mx-auto">
+            <div class="col my-3">
+                <a href="./studentApplication.php" class="btn btn-primary btn-lg col-md-12 p-sm-4" role="button">Student
+                    Applications</a>
             </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row mx-auto">
+            <div class="col mt-3">
+                <a href="./new/index.php" class="btn btn-success btn-lg col-md-12 p-sm-4" role="button">Approved
+                    Applications</a>
             </div>
+            <div class="col my-3">
+                <a href="./previous/index.php" class="btn btn-warning btn-lg col-md-12 p-sm-4" role="button">Rejected
+                    Applications</a>
+            </div>
+        </div>
+    </div>
 
-            <a href="#" class="w-100 btn btn-lg btn-warning mb-3" type="submit">Sign in</a>
-            <a href="#" class="w-100 btn btn-lg btn-primary text-light">
-                <i class="bi bi-google text-green"></i>
-                Google Sign in
-            </a>
-            <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
-        </form>
-    </main>
+
+
 </body>
 
 </html>
-
-
