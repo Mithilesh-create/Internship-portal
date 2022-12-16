@@ -1,6 +1,6 @@
 <?php
 $title = "Dashboard";
-$style = "./styles/studentApplication.css";
+$style = "./styles/approved.css";
 include_once("../../components/head.php");
 ?>
 
