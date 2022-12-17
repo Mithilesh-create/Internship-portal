@@ -1,6 +1,6 @@
 <?php
 $title = "Dashboard";
-$style = "./index.css";
+$style = "./styles/global.css";
 include_once("../../components/head.php");
 ?>
 
