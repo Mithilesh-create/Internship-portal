@@ -2,6 +2,7 @@
 $title = "Login";
 $style = "./index.css";
 $script = '<script src="https://accounts.google.com/gsi/client" async defer></script>';
+$favicon = "../../assets/favicon.ico";
 include_once("../../components/head.php");
 ?>
 

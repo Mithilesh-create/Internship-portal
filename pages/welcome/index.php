@@ -1,6 +1,7 @@
 <?php
 $title = "Welcome";
 $style = "./index.css";
+$favicon = "../../assets/favicon.ico";
 include_once("../../components/head.php");
 ?>
 
