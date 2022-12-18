@@ -8,7 +8,7 @@
                 <b>
                     &#x25CF;
                 </b>
-                <a href="">
+                <a href="./view.php">
                     XYZ PVT LTD requires interns for it's IT department.
                     <strong>Click to view !</strong>
                 </a>
@@ -17,7 +17,7 @@
                 <b>
                     &#x25CF;
                 </b>
-                <a href="">
+                <a href="./view.php">
                     XYZ PVT LTD requires interns for it's IT department.
                     <strong>Click to view !</strong>
                 </a>
@@ -26,7 +26,7 @@
                 <b>
                     &#x25CF;
                 </b>
-                <a href="">
+                <a href="./view.php">
                     XYZ PVT LTD requires interns for it's IT department.
                     <strong>Click to view !</strong>
                 </a>
