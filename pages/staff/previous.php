@@ -12,77 +12,95 @@ include_once("../../components/head.php");
     <div class="container my-2 greet">
         <p>Previous Applications</p>
     </div>
-    <div class="container mt-5 table-responsive-sm">
+    <div class="container mt-5">
         <table class="table table-bordered table-dark table-sm">
             <thead class="thead-light text-center">
                 <tr>
                     <th scope="col">ID</th>
+                    <th scope="col">View/Edit</th>
                     <th scope="col">Title</th>
                     <th scope="col">Published On</th>
-                    <th scope="col">Start Date</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Entries</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Operation</th>
-                    <th scope="col">View</th>
+                    <th scope="col">Registrations</th>
+                    <th scope="col">Download</th>
+
                 </tr>
             </thead>
             <tbody>
                 <tr class="table-light">
                     <th class="pt-3 text-center text-danger" scope="row">
-                        <a href="../Internship/index.php">
-                            14
-                        </a>
+                        14
                     </th>
+                    <td class="py-3 text-center ">
+                        <div class="d-flex justify-content-center align-items-center">
+
+                            <a href="./edit.php" class="btn btn-primary" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                    </td>
                     <td class="pt-3 ">
                         Mark Industries pvt. ltd
                     </td>
                     <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3 text-center">
-                        18/10/2022
-                    </td>
-                    <td class="pt-3 text-center">
-                        18/10/2022
-                    </td>
-                    <td class="pt-3 text-center">
-                        WFH
-                    </td>
-                    <td class="pt-3 text-center">
-                        SE-ECS
-                    </td>
-                    <td class="pt-3 text-center ">
+                    <th class="pt-3 text-center text-success">
+                        Active
+                    </th>
+                    <td class="py-3 text-center ">
                         <div class="d-flex justify-content-center align-items-center">
 
-                            <button class="btn btn-warning" role="button">
+                            <button class="btn btn-success" role="button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                                     <path
-                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                 </svg>
                             </button>
+
                         </div>
-                        <!-- <button class="btn btn-success" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                <path
-                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                <path
-                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                            </svg></button> -->
+
                     </td>
-                    <!-- <td class="py-3 ">
+                    <td class="py-3 text-center ">
                         <div class="d-flex justify-content-center align-items-center">
-                            <button class="btn btn-primary" role="button"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="bi bi-download"
-                                    viewBox="0 0 16 16">
+
+                            <a href="./registrations.php" target="_blank" class="btn btn-warning" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-fill-gear" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Zm9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                    </td>
+
+
+
+                    <td class="py-3 text-center ">
+                        <div class="d-flex justify-content-center align-items-center">
+
+                            <button class="btn btn-primary" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-download" viewBox="0 0 16 16">
                                     <path
                                         d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                                     <path
                                         d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                </svg></button>
+                                </svg>
+                            </button>
                         </div>
 
-                    </td> -->
+                    </td>
+
                 </tr>
 
             </tbody>
