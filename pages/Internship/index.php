@@ -1,6 +1,6 @@
 <?php
 $title = "Dashboard";
-$style = "./styles/global.css";
+$style = "./index.css";
 $favicon = "../../assets/favicon.ico";
 include_once("../../components/head.php");
 ?>
@@ -32,6 +32,30 @@ include_once("../../components/head.php");
                 platforms in the world, connecting journalists, pundits, and experts with millions of sports readers
                 every day. Working here is a great way to further your journalistic career in sports.
             </p>
+            <br>
+            <div>
+                <p class="h5">
+                    Duration
+                </p>
+                <p class="lead">
+                    <small>
+                        3 Months
+                    </small>
+                </p>
+            </div>
+            <br>
+            <div>
+                <p class="h5">
+                    Start Date
+                </p>
+                <p class="lead">
+
+                    <small>
+                        11/10/2022
+                    </small>
+
+                </p>
+            </div>
             <br>
             <div>
                 <p class="h5">
@@ -70,17 +94,7 @@ include_once("../../components/head.php");
                     </small>
                 </p>
             </div>
-            <br>
-            <div>
-                <p class="h5">
-                    Duration
-                </p>
-                <p class="lead">
-                    <strong>
-                        3 Months
-                    </strong>
-                </p>
-            </div>
+
             <br>
             <div>
                 <p class="h5">
@@ -95,6 +109,17 @@ include_once("../../components/head.php");
             <br>
             <div>
                 <p class="h5">
+                    Work Location
+                </p>
+                <p class="lead">
+                    <small>
+                        On-site
+                    </small>
+                </p>
+            </div>
+            <br>
+            <div>
+                <p class="h5">
                     Stipend Type
                 </p>
                 <p class="lead">
@@ -103,6 +128,8 @@ include_once("../../components/head.php");
                     </small>
                 </p>
             </div>
+
+
             <br>
             <div>
                 <p class="h5">
@@ -113,10 +140,26 @@ include_once("../../components/head.php");
                     <strong>
                         5000-10000
                     </strong>
-                    <strong>(Month)</strong>
+                    <strong>/ Month</strong>
 
                 </p>
             </div>
+            <br>
+            <div>
+                <p class="h5">
+                    Perks
+                </p>
+                <p class="lead text-muted">
+                    <small>
+                        <b>
+                            Certificate,
+                            Letter of recommendation,
+                            free snacks
+                        </b>
+                    </small>
+                </p>
+            </div>
+            <!-- <br>
             <div class="col d-flex align-items-center justify-content-center">
                 <a href="#"
                     class="btn btn-primary btn-lg col col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-evenly"
@@ -132,16 +175,19 @@ include_once("../../components/head.php");
                             d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
                     </svg>
                 </a>
+            </div> -->
+            <br>
+            <div class="col d-flex align-items-center justify-content-center">
+                <button disabled
+                    class="btn btn-secondary btn-lg col col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-evenly"
+                    role="button" aria-disabled="true">
+                    <div>
+                        Applied
+                    </div>
+                </button>
             </div>
-
-
-
         </div>
     </div>
-
-
-
-
 
 </body>
 

@@ -14,7 +14,7 @@ include_once("../../components/head.php");
     </div>
     <div class="container mt-5 table-responsive-sm">
         <table class="table table-bordered table-dark table-sm">
-            <thead class="thead-light">
+            <thead class="thead-light text-center">
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Company</th>
@@ -26,62 +26,63 @@ include_once("../../components/head.php");
                     <th scope="col">Mail</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody >
                 <tr class="table-light">
-                    <th class="pt-3 text-danger" scope="row">
+                    <th class="pt-3 text-center text-danger" scope="row">
                         <a href="./decision.php">
                             14
                         </a>
                     </th>
                     <td class="pt-3">
+                        
                         Mark Industries pvt. ltd
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         WFH
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         SE-ECS
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         Sent
                     </td>
 
 
                 </tr>
                 <tr class="table-light">
-                    <th class="pt-3 text-danger" scope="row">
+                    <th class="pt-3 text-center text-danger" scope="row">
                         <a href="./decision.php">
                             14
                         </a>
                     </th>
-                    <td class="pt-3">
+                    <td class="pt-3 text-left">
                         Mark Industries pvt. ltd
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         WFH
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         SE-ECS
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         Sent
                     </td>
 

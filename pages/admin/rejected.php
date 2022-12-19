@@ -14,7 +14,7 @@ include_once("../../components/head.php");
     </div>
     <div class="container mt-5 table-responsive-sm">
         <table class="table table-bordered table-dark table-sm">
-            <thead class="thead-light">
+            <thead class="thead-light text-center">
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Company</th>
@@ -29,64 +29,64 @@ include_once("../../components/head.php");
             </thead>
             <tbody>
                 <tr class="table-light">
-                    <th class="pt-3" scope="row">
+                    <th class="pt-3 text-center" scope="row">
                         14
                     </th>
                     <td class="pt-3">
                         Mark Industries pvt. ltd
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         WFH
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         SE-ECS
                     </td>
-                    <td class="pt-3 ">
+                    <td class="pt-3 text-center ">
                         18/10/2022
                     </td>
-                    <td class="pt-3 ">
+                    <td class="pt-3 text-center ">
                         Working Date comes during examination
                     </td>
-                   
+
                 </tr>
                 <tr class="table-light">
-                    <th class="pt-3" scope="row">
+                    <th class="pt-3 text-center" scope="row">
                         14
                     </th>
                     <td class="pt-3">
                         Mark Industries pvt. ltd
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         18/10/2022
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         WFH
                     </td>
-                    <td class="pt-3">
+                    <td class="pt-3 text-center">
                         SE-ECS
                     </td>
-                    <td class="pt-3 ">
+                    <td class="pt-3 text-center ">
                         18/10/2022
                     </td>
-                    <td class="pt-3 ">
+                    <td class="pt-3 text-center ">
                         Working Date comes during examination
                     </td>
-                  
+
                 </tr>
 
             </tbody>
