@@ -4,6 +4,7 @@ require '../../Libraries/fpdf/fpdf.php';
 $refrenceNumber = " PCE/001/2020-21";
 $date = "1st July 2022";
 $name = "Mithilesh Ganesh Sharma";
+$applicationID = "14";
 $start_date = "1st July 2022";
 $end_date = "1st September 2022";
 $year = "Second Year";
@@ -56,8 +57,4 @@ $pdf->Cell(0, 15, "", 0, 1);
 $pdf->Cell(0, 10, "Thank you.", 0, 1);
 $pdf->Cell(0, 20, "Yours faithfully", 0, 1);
 
-
-
-
-$pdf->Output("I");
-?>
+$pdf->Output("I", "Intern_Application_" . $applicationID);

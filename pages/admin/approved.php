@@ -59,7 +59,7 @@ include_once("../../components/head.php");
                     </td>
                     <td class="py-3 ">
                         <div class="d-flex justify-content-center align-items-center">
-                            <a href="../../components/internshipLetter/index.php" class="btn btn-primary" role="button"><svg xmlns="http://www.w3.org/2000/svg"
+                            <a href="../../components/internshipLetter/index.php" target="_blank" class="btn btn-primary" role="button"><svg xmlns="http://www.w3.org/2000/svg"
                                     width="16" height="16" fill="currentColor" class="bi bi-download"
                                     viewBox="0 0 16 16">
                                     <path
