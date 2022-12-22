@@ -11,10 +11,10 @@ include_once("../../components/head.php");
     ?>
 
 
-    <div class="container text-center">
     <div class="container my-2 greet">
         <p>Applications</p>
     </div>
+    <div class="container text-center">
         <div class="row mx-auto">
             <div class="col mt-3">
                 <a href="./pending.php" class="btn btn-warning btn-lg col-md-12 p-sm-4" role="button">Pending
