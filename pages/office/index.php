@@ -10,7 +10,7 @@ include_once("../../components/head.php");
     include_once("../../components/navbar/index.php");
     ?>
 
-
+    
     <div class="container text-center">
         <div class="row mx-auto">
             <div class="col mt-3">
@@ -32,18 +32,6 @@ include_once("../../components/head.php");
             <div class="col my-3">
                 <a href="./rejected.php" class="btn btn-danger btn-lg col-md-12 p-sm-4" role="button">Rejected
                     Applications</a>
-            </div>
-        </div>
-    </div>
-    <div class="container text-center">
-        <div class="row mx-auto">
-            <div class="col mt-3">
-                <a href="./approved.php" class="btn btn-primary btn-lg col-md-12 p-sm-4" role="button">New
-                    Announcements</a>
-            </div>
-            <div class="col my-3">
-                <a href="./rejected.php" class="btn btn-danger btn-lg col-md-12 p-sm-4" role="button">Previous
-                    Announcements</a>
             </div>
         </div>
     </div>

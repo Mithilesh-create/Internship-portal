@@ -1,7 +1,7 @@
 <?php
 require '../../Libraries/fpdf/fpdf.php';
 
-$refrenceNumber = " PCE/001/2020-21";
+$refrenceNumber = "PCE/INTERN/0001/2021-22";
 $date = "1st July 2022";
 $name = "Mithilesh Ganesh Sharma";
 $applicationID = "14";
@@ -58,3 +58,4 @@ $pdf->Cell(0, 10, "Thank you.", 0, 1);
 $pdf->Cell(0, 20, "Yours faithfully", 0, 1);
 
 $pdf->Output("I", "Intern_Application_" . $applicationID);
+?>
