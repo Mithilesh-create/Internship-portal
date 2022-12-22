@@ -159,7 +159,7 @@ include_once("../../components/head.php");
                     </small>
                 </p>
             </div>
-            <!-- <br>
+            <br>
             <div class="col d-flex align-items-center justify-content-center">
                 <a href="#"
                     class="btn btn-primary btn-lg col col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-evenly"
@@ -175,8 +175,8 @@ include_once("../../components/head.php");
                             d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
                     </svg>
                 </a>
-            </div> -->
-            <br>
+            </div>
+            <!-- <br>
             <div class="col d-flex align-items-center justify-content-center">
                 <button disabled
                     class="btn btn-secondary btn-lg col col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-evenly"
@@ -185,7 +185,7 @@ include_once("../../components/head.php");
                         Applied
                     </div>
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
 

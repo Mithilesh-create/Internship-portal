@@ -10,7 +10,7 @@ include_once("../../components/head.php");
     include_once("../../components/navbar/index.php");
     ?>
     <div class="container my-2 greet">
-        <p>Welcome , XYZ</p>
+        <p>Welcome , ABC</p>
     </div>
     <div class="container text-center">
         <div class="row mx-auto">
