@@ -11,6 +11,9 @@ include_once("../../components/head.php");
     ?>
 
 
+    <div class="container my-2 greet">
+        <p>Applications</p>
+    </div>
     <div class="container text-center">
         <div class="row mx-auto">
             <div class="col mt-3">
@@ -35,14 +38,18 @@ include_once("../../components/head.php");
             </div>
         </div>
     </div>
+    <hr>
+    <div class="container my-2 greet">
+        <p>Announcements</p>
+    </div>
     <div class="container text-center">
         <div class="row mx-auto">
             <div class="col mt-3">
-                <a href="./approved.php" class="btn btn-primary btn-lg col-md-12 p-sm-4" role="button">New
+                <a href="./new.php" class="btn btn-primary btn-lg col-md-12 p-sm-4" role="button">New
                     Announcements</a>
             </div>
             <div class="col my-3">
-                <a href="./rejected.php" class="btn btn-danger btn-lg col-md-12 p-sm-4" role="button">Previous
+                <a href="./previous.php" class="btn btn-info btn-lg col-md-12 p-sm-4" role="button">Previous
                     Announcements</a>
             </div>
         </div>
