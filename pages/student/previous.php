@@ -5,218 +5,148 @@ $favicon = "../../assets/favicon.ico";
 include_once("../../components/head.php");
 ?>
 
-<body> 
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        $('#myModal').on('shown.bs.modal', function() {
+            $('#myInput').trigger('focus')
+        })
+    </script>
     <?php
     include_once("../../components/navbar/index.php");
     ?>
-    
-    <div class="container my-2 greet"> 
-    <div class="row">
-        <div class="col greet">
-        <p>Previous Applications</p>
-        </div>
-        <div class="col">
-        <span style="float:right;">
-        <div class="row height d-flex justify-content-center align-items-center">
 
-<div class="col-md-8">
+    <div class="container my-2 greet">
+        <div class="row">
+            <div class="col greet">
+                <p>Previous Applications</p>
+                <!-- Search Button -->
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <input class="form-control" id="search" placeholder="ID or Company Name">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Search</button>
+                    </div>
+                </form>
+            </div>
 
-  <div class="search">
-    <i class="fa fa-search"></i>
-    <input type="text" class="form-control" placeholder="Search Bar">
-    <button class="btn btn-primary">Search</button>
-  </div>
-  
-</div>
-
-</div>
-    </span>
-
-        </div>
-    </div>
-    <div class="container mt-5 table-responsive-sm">
-        <table class="table table-bordered table-dark table-sm">
-            <thead class="thead-light text-center">
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Company</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Comment</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="table-light">
-                    <th class="pt-3 text-center" scope="row">
-                        14
-                    </th>
-                    <td class="pt-3">
-                        Mark Industries pvt. ltd
-                    </td>
-                    <td class="pt-3 text-center">
-                        18/10/2022
-                    </td>
-                    <td class="pt-3 text-center">
-                        Approved
-                    </td>
-                    <td class="py-3 text-center">
-                        Please collect the approval letter from office and upload the certificate after completion of intership 
-
-                        <p> Upload Certificate/LOR here:</p>
-
-                        <form action="/action_page.php">
-                        <input type="file" id="myFile" name="filename" accept="application/pdf">
-                        <input type="submit">
-                        <?php 
-
-                        if($imageFileType != "pdf") {
-                        $uploadOk = 0;
-                        } ?>
-                        </form>
-
-                    </td>
-                </tr>
-                <tr class="table-light">
-                    <th class="pt-3 text-center" scope="row">
-                        14
-                    </th>
-                    <td class="pt-3">
-                        Mark Industries pvt. ltd
-                    </td>
-                    <td class="pt-3 text-center">
-                        18/10/2022
-                    </td>
-                    <td class="pt-3 text-center">
-                        Approved
-                    </td>
-                    <td class="py-3 text-center">
-                     Please collect the approval letter from office and upload the certificate after completion of intership
-
-                        <p>Upload Certificate/LOR here:</p>
-
-                        <form action="/action_page.php">
-                        <input type="file" id="myFile" name="filename" accept="application/pdf">
-                        <input type="submit">
-                        </form>
-
-                    </td>
-                </tr>
-                <tr class="table-light">
-                    <th class="pt-3 text-center" scope="row">
-                        14
-                    </th>
-                    <td class="pt-3">
-                        Mark Industries pvt. ltd
-                    </td>
-                    <td class="pt-3 text-center">
-                        18/10/2022
-                    </td>
-                    <td class="pt-3 text-center">
-                        Pending
-                    </td>
-                    <td class="py-3 text-center">
-                        Under Review
-                    </td>
-                </tr>
-                <tr class="table-light">
-                    <th class="pt-3 text-center" scope="row">
-                        14
-                    </th>
-                    <td class="pt-3">
-                        Mark Industries pvt. ltd
-                    </td>
-                    <td class="pt-3 text-center">
-                        18/10/2022
-                    </td>
-                    <td class="pt-3 text-center">
-                        Pending
-                    </td>
-                    <td class="py-3 text-center">
-                    Under Review
-                    </td>
-                </tr>
-                <tr class="table-light">
-                    <th class="pt-3 text-center" scope="row">
-                        14
-                    </th>
-                    <td class="pt-3">
-                        Mark Industries pvt. ltd
-                    </td>
-                    <td class="pt-3 text-center">
-                        18/10/2022
-                    </td>
-                    <td class="pt-3 text-center">
-                        Pending
-                    </td>
-                    <td class="py-3 text-center">
-                        Under Review
-
-                    </td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </div>
+            <div class="container mt-5 table-responsive-sm">
+                <table class="table table-bordered table-dark table-sm">
+                    <thead class="thead-light text-center">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Company</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Comment</th>
+                            <th scope="col">Certificate/LOR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-light">
+                            <th class="pt-3 text-center" scope="row">
+                                14
+                            </th>
+                            <td class="pt-3">
+                                Mark Industries pvt. ltd
+                            </td>
+                            <td class="pt-3 text-center">
+                                18/10/2022
+                            </td>
+                            <td class="pt-3 text-center">
+                                Approved
+                            </td>
+                            <td class="py-3 text-center col-3">
+                                Please collect the approval letter from office and upload the certificate after completion of internship
 
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+                            </td>
+                            <td class="py-3 text-center col-1">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger mb-3" data-toggle="modal" data-target="#exampleModalCenter">Upload</button>
+                            </td>
 
 
-       body{
-        background-color:#eee;
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-       }
+                        </tr>
+                        <tr class="table-light">
+                            <th class="pt-3 text-center" scope="row">
+                                14
+                            </th>
+                            <td class="pt-3">
+                                Mark Industries pvt. ltd
+                            </td>
+                            <td class="pt-3 text-center">
+                                18/10/2022
+                            </td>
+                            <td class="pt-3 text-center">
+                                Rejected
+                            </td>
+                            <td class="py-3 text-center">
+                                Rejected as internship falls during examination period
+                            </td>
+                        </tr>
+                        <tr class="table-light">
+                            <th class="pt-3 text-center" scope="row">
+                                14
+                            </th>
+                            <td class="pt-3">
+                                Mark Industries pvt. ltd
+                            </td>
+                            <td class="pt-3 text-center">
+                                18/10/2022
+                            </td>
+                            <td class="pt-3 text-center">
+                                Pending
+                            </td>
+                            <td class="py-3 text-center">
+                                Under Review
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-       .height{
-        height: 100vh;
-       }
-       
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Upload LOR/Certificate</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="file" accept="application/pdf" class="form-control" spellcheck="false" required autocomplete="off" name="resume" id="resume">
+                            <br>
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <a href="../student/apply.php" class="btn btn-primary btn-sm col-4 d-flex align-items-center justify-content-evenly" role="button" aria-disabled="true">
+                                    <div>
+                                        View
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-       .search{
-       position: relative;
-       box-shadow: 0 0 40px rgba(51, 51, 51, .1);
-         
-       }
-
-       .search input{
-
-        height: 60px;
-        text-indent: 25px;
-        border: 2px solid #d6d4d4;
 
 
-       }
-
-
-       .search input:focus{
-
-        box-shadow: none;
-        border: 2px solid blue;
-
-
-       }
-
-       .search .fa-search{
-
-        position: absolute;
-        top: 20px;
-        left: 16px;
-
-       }
-
-       .search button{
-
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        height: 50px;
-        width: 110px;
-        background: blue;
-
-       }
 
 </body>
 

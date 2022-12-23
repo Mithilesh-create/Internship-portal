@@ -11,17 +11,17 @@ include_once("../../components/head.php");
     ?>
     <div class="container my-2 greet">
         <p>Student Applications</p>
-        <div class="col-md-8">
-
-            <div class="search">
-            <i class="fa fa-search"></i>
-            <input type="text" class="form-control" placeholder="Search Bar">
-            <button class="btn btn-primary">Search</button>
+        <!-- Search Button -->
+        <form class="row g-3">
+            <div class="col-auto">
+                <input class="form-control" id="search" placeholder="ID or Company Name">
             </div>
-        
-        </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Search</button>
+            </div>
+        </form>
     </div>
-    <div class="container mt-5 table-responsive-sm">
+    <div class="container mt-2 table-responsive-sm">
         <table class="table table-bordered table-dark table-sm">
             <thead class="thead-light text-center">
                 <tr>
@@ -36,7 +36,7 @@ include_once("../../components/head.php");
                     <!-- <th scope="col">Download</th> -->
                 </tr>
             </thead>
-            <tbody >
+            <tbody>
                 <tr class="table-light">
                     <th class="pt-3 text-danger text-center" scope="row">
                         <a href="./decision.php">
@@ -61,7 +61,7 @@ include_once("../../components/head.php");
                     <td class="pt-3 text-center">
                         SE-ECS
                     </td>
-                    
+
                     <!-- <td class="py-3 ">
                         <div class="d-flex justify-content-center align-items-center">
                             <button class="btn btn-primary" role="button"><svg xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ include_once("../../components/head.php");
                     <td class="pt-3 text-center">
                         SE-ECS
                     </td>
-                    
+
                     <!-- <td class="py-3 ">
                         <div class="d-flex justify-content-center align-items-center">
                             <button disabled class="btn btn-primary" role="button"><svg
