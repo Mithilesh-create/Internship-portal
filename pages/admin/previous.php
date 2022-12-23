@@ -11,8 +11,17 @@ include_once("../../components/head.php");
     ?>
     <div class="container my-2 greet">
         <p>Previous Applications</p>
+        <!-- Search Button -->
+        <form class="row g-3">
+            <div class="col-auto">
+                <input class="form-control" id="search" placeholder="ID or Company Name">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Search</button>
+            </div>
+        </form>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-2">
         <table class="table table-bordered table-dark table-sm">
             <thead class="thead-light text-center">
                 <tr>
@@ -35,7 +44,7 @@ include_once("../../components/head.php");
                     <td class="py-3 text-center ">
                         <div class="d-flex justify-content-center align-items-center">
 
-                            <a href="./edit.php" class="btn btn-primary" role="button">
+                            <a href="../Internship/" class="btn btn-primary" role="button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                     <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />

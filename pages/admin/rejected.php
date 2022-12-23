@@ -11,8 +11,18 @@ include_once("../../components/head.php");
     ?>
     <div class="container my-2 greet">
         <p>Rejected Applications</p>
+
+        <!-- Search Button -->
+        <form class="row g-3">
+            <div class="col-auto">
+                <input class="form-control" id="search" placeholder="ID or Company Name">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Search</button>
+            </div>
+        </form>
     </div>
-    <div class="container mt-5 table-responsive-sm">
+    <div class="container mt-2 table-responsive-sm">
         <table class="table table-bordered table-dark table-sm">
             <thead class="thead-light text-center">
                 <tr>

@@ -22,7 +22,6 @@ include_once("../../components/head.php");
                     <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="userName" id="userName" placeholder="John Richard Doe">
                 </div>
                 <div class="col-12">
-
                     <strong for="Contact" class="form-label">Contact No.</strong>
                     <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="Contact" id="Contact" placeholder="987654210">
                 </div>
@@ -44,10 +43,9 @@ include_once("../../components/head.php");
                                 <br>
                                 (JohnDoe_MarkIndustries_2000PE0400.pdf)
                             </i>
-
                         </small>
                     </div>
-                    
+
                 </div>
 
 
@@ -59,9 +57,6 @@ include_once("../../components/head.php");
 
                     </div>
                 </div>
-
-
-
             </form>
         </div>
     </div>
