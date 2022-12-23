@@ -10,7 +10,7 @@ include_once("../../components/head.php");
     include_once("../../components/navbar/index.php");
     ?>
     <div class="container my-2 greet">
-        <p>Approved Applications</p>
+        <p>Approved Application</p>
         <div class="col-md-8">
 
             <div class="search">
