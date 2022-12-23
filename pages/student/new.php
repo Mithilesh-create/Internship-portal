@@ -47,11 +47,12 @@ include_once("../../components/head.php");
                 <div class="col-12">
                     <strong for="Branch" class="form-label">Branch</strong>
                     <select class="form-select" aria-label="Default select example">
-                        <option selected value="1">ECS</option>
-                        <option value="2">CS</option>
-                        <option value="3">IT</option>
-                        <option value="4">MECH</option>
-                        <option value="5">AUTO</option>
+                        <option selected value="1">EXTC</option>
+                        <option value="2">ECS</option>
+                        <option value="3">CS</option>
+                        <option value="4">IT</option>
+                        <option value="5">MECH</option>
+                        <option value="6">AUTO</option>
                     </select>
                 </div>
 

@@ -11,6 +11,15 @@ include_once("../../components/head.php");
     ?>
     <div class="container my-2 greet">
         <p>Approved Applications</p>
+        <div class="col-md-8">
+
+            <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="form-control" placeholder="Search Bar">
+            <button class="btn btn-primary">Search</button>
+            </div>
+        
+        </div>
     </div>
     <div class="container mt-5 table-responsive-sm">
         <table class="table table-bordered table-dark table-sm">

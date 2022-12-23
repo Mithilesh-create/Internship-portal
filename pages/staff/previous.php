@@ -10,7 +10,16 @@ include_once("../../components/head.php");
     include_once("../../components/navbar/index.php");
     ?>
     <div class="container my-2 greet">
-        <p>Previous Applications</p>
+        <p>Previous Announcements</p>
+        <div class="col-md-8">
+
+            <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="form-control" placeholder="Search Bar">
+            <button class="btn btn-primary">Search</button>
+            </div>
+        
+        </div>
     </div>
     <div class="container mt-5">
         <table class="table table-bordered table-dark table-sm">
