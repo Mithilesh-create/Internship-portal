@@ -13,16 +13,16 @@ include_once("../../components/head.php");
 
     <div class="container my-2 greet">
         <p>Applications</p>
-
         <div class="col-md-8">
-    </div>
-
+        </div>
     </div>
     <div class="container text-center">
         <div class="row mx-auto">
-            
+            <div class="col mt-3">
+                <a href="./active.php" class="btn btn-primary btn-lg col-md-12 p-sm-4" role="button">Active Internships</a>
+            </div>
             <div class="col my-3">
-                <a href="./studentApplication.php" class="btn btn-primary btn-lg col-md-12 p-sm-4" role="button">Student
+                <a href="./studentApplication.php" class="btn btn-warning btn-lg col-md-12 p-sm-4" role="button">Student
                     Applications</a>
             </div>
         </div>
@@ -39,6 +39,7 @@ include_once("../../components/head.php");
             </div>
         </div>
     </div>
+
     <hr>
     <div class="container my-2 greet">
         <p>Announcements</p>
@@ -55,6 +56,21 @@ include_once("../../components/head.php");
             </div>
         </div>
     </div>
+    <hr>
+    <div class="container my-2 greet">
+        <p>Letter</p>
+    </div>
+    <div class="container text-center">
+        <div class="row mx-auto">
+            <div class="col-6 mt-3">
+                <a href="./letterAddress.php" class="btn btn-warning btn-lg col-md-12 p-sm-4" role="button">Generate
+                    Letter</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
 
 
 
