@@ -54,10 +54,6 @@ include_once("../../components/head.php");
                     Announcements</a>
             </div>
         </div>
-    </div>
-
-
-
-</body>
+    </div>        
 
 </html>
