@@ -95,11 +95,13 @@ include_once("../../components/head.php");
     <head>
         <title>pagination</title>
         <style type="text/css">
-            .first{
+            .firstpaging{
                 border: 1px solid black;
                 padding: 20px;
-                align-items: center;
+                display: flex;
                 justify-content: center;
+                align-items: center;
+                
          }
          a{
                 text-decoration: none ;
@@ -110,7 +112,6 @@ include_once("../../components/head.php");
             a.sec:hover{
                 background-color: #0d6efd;
                 color: white;
-                border: 1px solid black;
 
             }
         </style>
@@ -119,10 +120,11 @@ include_once("../../components/head.php");
     </head>
     <body>
         <?php
-            include_once("../../components/navbar/index.php");
+            include_once("../../components/navbar/index.php"); 
+
         ?>
 
-        <div class="first">
+        <div class="firstpaging">
         <a href=""class="sec"><< Previous</a>
         <a href="" class="sec">1</a>
         <a href="" class="sec">2</a>

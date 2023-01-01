@@ -110,6 +110,7 @@ include_once("../../components/head.php");
             .first{
                 border: 1px solid black;
                 padding: 20px;
+                display: flex;
                 align-items: center;
                 justify-content: center;
          }
@@ -122,7 +123,7 @@ include_once("../../components/head.php");
             a.sec:hover{
                 background-color: #0d6efd;
                 color: white;
-                border: 1px solid black;
+
 
             }
         </style>
