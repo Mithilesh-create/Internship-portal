@@ -12,6 +12,27 @@ include_once("../../components/head.php");
     <div class="container my-2 greet">
         <p>New Application</p>
     </div>
+    <div class="alert alert-success container col-8" role="alert">
+        <h2 class="alert-heading">Application Success</h2>
+        <hr>
+        <p>You have successfully requested NOC letter for
+            <b>XYZ pvt ltd</b>.<br>
+            Please keep checking your mes email inbox for further updates.
+        </p>
+
+    </div>
+    <div class="alert alert-danger container col-8" role="alert">
+        <h2 class="alert-heading">Application Failed</h2>
+        <hr>
+        <p>
+            <b>Something went wrong</b>
+            <br>
+            We cannot register your application at this moment please try again later after some time.
+            <br>
+            If the issue is not resolved please contact TPO for further updates.
+        </p>
+
+    </div>
     <div class="container my-3" id="content">
         <div class="bg-light p-5 rounded">
             <form class="row g-3" action="<?php echo htmlentities($_SERVER['PHP_SELF']) ?>" method="POST">
@@ -19,19 +40,15 @@ include_once("../../components/head.php");
                 <div class="col-12">
 
                     <strong for="CompanyName" class="form-label">Company Name</strong>
-                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off"
-                        name="CompanyName" id="CompanyName" placeholder="e.g. ABC pvt. ltd.">
+                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="CompanyName" id="CompanyName" placeholder="e.g. ABC pvt. ltd.">
                 </div>
                 <div class="col-12">
                     <strong for="CompanyAddress" class="form-label">Company Address</strong>
-                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off"
-                        name="CompanyAddress" id="CompanyAddress"
-                        placeholder="e.g. Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016">
+                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="CompanyAddress" id="CompanyAddress" placeholder="e.g. Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016">
                 </div>
                 <div class="col-12">
                     <strong for="CompanyLocation" class="form-label">Company Location</strong>
-                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off"
-                        name="CompanyLocation" id="CompanyLocation" placeholder="e.g. Bangalore">
+                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="CompanyLocation" id="CompanyLocation" placeholder="e.g. Bangalore">
                 </div>
 
                 <div class="col-12">
@@ -105,7 +122,7 @@ include_once("../../components/head.php");
                 <div class="container text-center">
                     <div class="row mx-auto">
                         <div class="col mt-3">
-                            <button class="btn btn-primary btn-lg col-md-12"  role="button">Submit</button>
+                            <button class="btn btn-primary btn-lg col-md-12" role="button">Submit</button>
                         </div>
 
                     </div>
