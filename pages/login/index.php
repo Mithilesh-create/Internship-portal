@@ -1,27 +1,9 @@
 <?php
 $title = "Login";
 $style = "./index.css";
-$script = '<script src="https://accounts.google.com/gsi/client" async defer></script>';
 $favicon = "../../assets/favicon.ico";
 include_once("../../components/head.php");
 ?>
-
-<script>
-    function handleCredentialResponse(response) {
-        console.log("Encoded JWT ID token: " + response.credential);
-    }
-    window.onload = function () {
-        google.accounts.id.initialize({
-            client_id: "YOUR_GOOGLE_CLIENT_ID",
-            callback: handleCredentialResponse
-        });
-        google.accounts.id.renderButton(
-            document.getElementById("buttonDiv"),
-            { theme: "outline", size: "large" }
-        );
-        google.accounts.id.prompt();
-    }
-</script>
 
 <body>
     <div class="outerGrid">
@@ -48,15 +30,6 @@ include_once("../../components/head.php");
 
 
     </div>
-    <!-- <div class="">
-
-        
-
-
-        
-
-    </div> -->
-
 </body>
 
 </html>
