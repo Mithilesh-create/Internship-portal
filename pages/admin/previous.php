@@ -166,4 +166,45 @@ include_once("../../components/head.php");
     </div>
 </body>
 
+    <head>
+        <title>pagination</title>
+        <style type="text/css">
+            .firstpaging{
+                border: 1px solid black;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+         }
+         a{
+                text-decoration: none ;
+                background-color: white;
+                padding: 10px;
+                color: black;
+         }
+            a.sec:hover{
+                background-color: #0d6efd;
+                color: white;
+
+
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <?php
+            include_once("../../components/navbar/index.php");
+        ?>
+
+        <div class="firstpaging">
+        <a href=""class="sec"><< Previous</a>
+        <a href="" class="sec">1</a>
+        <a href="" class="sec">2</a>
+        <a href="" class="sec">3</a>
+        <a href="" class="sec">4</a>
+        <a href="" class="sec">5</a>
+        <a href=""class="sec">Next >></a>
+        </div>    
+    </body>
 </html>
