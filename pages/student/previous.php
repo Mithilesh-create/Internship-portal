@@ -18,6 +18,9 @@ include_once("../../components/head.php");
 // $data_search = "";
 // $query = mysqli_query($conn, $data_search);
 ?>
+<?php
+require './auth.php';
+?>
 
 <head>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -127,8 +130,10 @@ include_once("../../components/head.php");
                 <br>
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
-                        <li class="page-item <?php //if ($page < 2) echo "disabled" ?>">
-                            <a class="page-link" href="previous.php?page=<?php //echo $page - 1; ?>" tabindex="-1">Previous</a>
+                        <li class="page-item <?php //if ($page < 2) echo "disabled" 
+                                                ?>">
+                            <a class="page-link" href="previous.php?page=<?php //echo $page - 1; 
+                                                                            ?>" tabindex="-1">Previous</a>
                         </li>
                         <?php
                         //$row_search = "SELECT COUNT(*) FROM userregisdata";
@@ -146,8 +151,8 @@ include_once("../../components/head.php");
                         // }
                         //
                         //temporary start and end
-                        $start=1;
-                        $end=3;
+                        $start = 1;
+                        $end = 3;
                         //
                         //
                         for ($i = $start; $i <= $end; $i++) {
@@ -159,8 +164,10 @@ include_once("../../components/head.php");
                             echo $pagLink;
                         }
                         ?>
-                        <li class="page-item <?php //if ($page == $total_pages) echo "disabled" ?>">
-                            <a class="page-link" href="previous.php?page=<?php //if ($page < $total_pages) echo $page + 1; ?>">Next</a>
+                        <li class="page-item <?php //if ($page == $total_pages) echo "disabled" 
+                                                ?>">
+                            <a class="page-link" href="previous.php?page=<?php //if ($page < $total_pages) echo $page + 1; 
+                                                                            ?>">Next</a>
                         </li>
                     </ul>
                 </nav>
@@ -201,6 +208,6 @@ include_once("../../components/head.php");
 
 
 
-            </body>
+</body>
 
 </html>

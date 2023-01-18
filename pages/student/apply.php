@@ -4,6 +4,9 @@ $style = "./styles/global.css";
 $favicon = "../../assets/favicon.ico";
 include_once("../../components/head.php");
 ?>
+<?php
+require './auth.php';
+?>
 
 <body>
     <?php

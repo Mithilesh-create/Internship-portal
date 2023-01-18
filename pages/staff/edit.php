@@ -4,6 +4,9 @@ $style = "./styles/global.css";
 $favicon = "../../assets/favicon.ico";
 include_once("../../components/head.php");
 ?>
+<?php
+require './auth.php';
+?>
 
 <body>
     <?php
@@ -22,8 +25,7 @@ include_once("../../components/head.php");
                     <br>
                     <br>
 
-                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="Title"
-                        id="Title" placeholder="e.g. ABC pvt. ltd. hiring interns for XYZ fields....">
+                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="Title" id="Title" placeholder="e.g. ABC pvt. ltd. hiring interns for XYZ fields....">
                 </div>
                 <br>
 
@@ -36,8 +38,7 @@ include_once("../../components/head.php");
                     </label>
                     <br>
 
-                    <textarea class="form-control" id="Description" rows="10"
-                        placeholder="Description Of Announcement"></textarea>
+                    <textarea class="form-control" id="Description" rows="10" placeholder="Description Of Announcement"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="skills" class="form-label">
@@ -47,15 +48,13 @@ include_once("../../components/head.php");
 
                     </label>
                     <br>
-                    <textarea class="form-control" id="skills" rows="2"
-                        placeholder="e.g. AutoCAD, JAVA, Web development, PCB Designing, etc..."></textarea>
+                    <textarea class="form-control" id="skills" rows="2" placeholder="e.g. AutoCAD, JAVA, Web development, PCB Designing, etc..."></textarea>
                 </div>
                 <div class="col-12">
                     <strong for="Location" class="form-label">Location</strong>
                     <br>
 
-                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off"
-                        name="Location" id="Location" placeholder="e.g. Raigad,Panvel">
+                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="Location" id="Location" placeholder="e.g. Raigad,Panvel">
                 </div>
                 <br>
 
@@ -70,8 +69,7 @@ include_once("../../components/head.php");
                     <strong for="Duration" class="form-label">Duration</strong>
                     <br>
 
-                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off"
-                        name="Duration" id="Duration" placeholder="Number (In Months)">
+                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="Duration" id="Duration" placeholder="Number (In Months)">
                 </div>
                 <br>
 
@@ -143,8 +141,7 @@ include_once("../../components/head.php");
                     <strong for="Stipend" class="form-label">Stipend</strong>
                     <br>
 
-                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off"
-                        name="Stipend" id="Stipend" placeholder="(In Rupees)">
+                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="Stipend" id="Stipend" placeholder="(In Rupees)">
                 </div>
                 <div class="form-group">
                     <label><strong>Work Location :</strong></label>
@@ -168,8 +165,7 @@ include_once("../../components/head.php");
                     <strong for="Perks" class="form-label">Perks</strong>
                     <br>
 
-                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="Perks"
-                        id="Perks" placeholder="e.g. Certificate, Letter Of Recommendation, Flexible timings, etc...">
+                    <input type="text" class="form-control" spellcheck="false" required autocomplete="off" name="Perks" id="Perks" placeholder="e.g. Certificate, Letter Of Recommendation, Flexible timings, etc...">
                 </div>
                 <br>
                 <div class="container text-center">

@@ -18,7 +18,9 @@ include_once("../../components/head.php");
 // $data_search = "";
 // $query = mysqli_query($conn, $data_search);
 ?>
-
+<?php
+require './auth.php';
+?>
 <body>
     <?php
     include_once("../../components/navbar/index.php");

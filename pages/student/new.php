@@ -4,7 +4,43 @@ $style = "./styles/global.css";
 $favicon = "../../assets/favicon.ico";
 include_once("../../components/head.php");
 ?>
-
+<?php
+require './auth.php';
+?>
+<?php
+// // $show_email = false;
+// // $show = false;
+// if (isset($_POST['submit'])) {
+//   $CompanyName = mysqli_real_escape_string($db_connection, $_POST['CompanyName']);
+//   $CompanyAddress = mysqli_real_escape_string($db_connection, $_POST['CompanyAddress']);
+//   $CompanyLocation = mysqli_real_escape_string($db_connection, $_POST['CompanyLocation']);
+//   //
+//   $startDate = mysqli_real_escape_string($db_connection, $_POST['startDate']);
+//   $endDate = mysqli_real_escape_string($db_connection, $_POST['endDate']);
+//   $branch = mysqli_real_escape_string($db_connection, $_POST['branch']);
+//   $semester = mysqli_real_escape_string($db_connection, $_POST['semester']);
+//   $Stipend = mysqli_real_escape_string($db_connection, $_POST['Stipend']);
+//   $Location = mysqli_real_escape_string($db_connection, $_POST['Location']);
+//   // 
+//   // 
+//   $email_query = "SELECT * FROM `userregisdata` WHERE email='$emailid'";
+//   $duplicate_email = mysqli_query($conn, $email_query);
+//   $query_mail_present = mysqli_num_rows($duplicate_email);
+//   // 
+// //   if ($query_mail_present > 0) {
+// //     $show_email = true;
+// //   } else {
+//     $insertCompany = "INSERT INTO `Company_Details`(`CompanyName`, `CompanyAddress`, `CompanyLocation`) VALUES ('$CompanyName', '$CompanyAddress', '$CompanyLocation')";
+//     $insertApplication = "INSERT INTO `Company_Details`(`CompanyName`, `CompanyAddress`, `CompanyLocation`) VALUES ('$CompanyName', '$CompanyAddress', '$CompanyLocation')";
+// //     $res = mysqli_query($conn, $insertquery);
+// //     if ($res) {
+// //       header("Location:/Airforce/signin/signin.php");
+// //     } else {
+// //       $show = false;
+// //     }
+// //   }
+// }
+?>
 <body>
     <?php
     include_once("../../components/navbar/index.php");
@@ -53,17 +89,17 @@ include_once("../../components/head.php");
 
                 <div class="col-12">
                     <strong for="inputHeight" class="form-label">Start Date</strong>
-                    <input id="startDate" class="form-control" type="date" />
+                    <input id="startDate" name="startDate" class="form-control" type="date" />
 
                 </div>
                 <div class="col-12">
                     <strong for="inputHeight" class="form-label">End Date</strong>
-                    <input id="endDate" class="form-control" type="date" />
+                    <input id="endDate" name="endDate" class="form-control" type="date" />
                 </div>
 
                 <div class="col-12">
                     <strong for="Branch" class="form-label">Branch</strong>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" name="branch" aria-label="Default select example">
                         <option selected value="1">EXTC</option>
                         <option value="2">ECS</option>
                         <option value="3">CS</option>
@@ -75,7 +111,7 @@ include_once("../../components/head.php");
 
                 <div class="col-12">
                     <strong for="Semester" class="form-label">Current Semester :</strong>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" name="semester" aria-label="Default select example">
                         <option selected value="1">I</option>
                         <option value="2">II</option>
                         <option value="3">III</option>
@@ -122,7 +158,7 @@ include_once("../../components/head.php");
                 <div class="container text-center">
                     <div class="row mx-auto">
                         <div class="col mt-3">
-                            <button class="btn btn-primary btn-lg col-md-12" role="button">Submit</button>
+                            <button class="btn btn-primary btn-lg col-md-12" name="submit" role="button">Submit</button>
                         </div>
 
                     </div>
