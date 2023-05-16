@@ -7,11 +7,11 @@ include_once("../../components/head.php");
 //pagination part
 //connect db here
 // include "../../connect/connect.php";
-// if (isset($_GET["page"])) {
-//     $page = $_GET["page"];
-// } else {
-//     $page = 1;
-// }
+if (isset($_GET["page"])) {
+    $page = $_GET["page"];
+} else {
+    $page = 1;
+}
 // $per_page_record = 10; // limit
 // $start_from = ($page - 1) * $per_page_record;
 // // $data_search = "SELECT * FROM userregisdata LIMIT $start_from, $per_page_record";//db query here

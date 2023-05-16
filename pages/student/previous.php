@@ -6,12 +6,12 @@ include_once("../../components/head.php");
 
 //pagination part
 //connect db here
-// include "../../connect/connect.php";
-// if (isset($_GET["page"])) {
-//     $page = $_GET["page"];
-// } else {
-//     $page = 1;
-// }
+include "../../connect/connect.php";
+if (isset($_GET["page"])) {
+    $page = $_GET["page"];
+} else {
+    $page = 1;
+}
 // $per_page_record = 10; // limit
 // $start_from = ($page - 1) * $per_page_record;
 // // $data_search = "SELECT * FROM userregisdata LIMIT $start_from, $per_page_record";//db query here
@@ -107,6 +107,9 @@ require './auth.php';
                             <td class="py-3 text-center">
                                 Rejected as internship falls during examination period
                             </td>
+                            <td class="py-3 text-center">
+                                
+                            </td>
                         </tr>
                         <tr class="table-light">
                             <th class="pt-3 text-center" scope="row">
@@ -123,6 +126,9 @@ require './auth.php';
                             </td>
                             <td class="py-3 text-center">
                                 Under Review
+                            </td>
+                            <td class="py-3 text-center">
+                                
                             </td>
                         </tr>
                     </tbody>

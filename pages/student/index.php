@@ -29,7 +29,8 @@ require './auth.php';
     include_once("../../components/navbar/index.php");
     ?>
     <div class="container my-2 greet">
-        <p>Welcome , <?php echo $user['name']; ?></p>
+        <p>Welcome , <?php echo $user['name']; ?>
+    </p>
     </div>
     <div class="container text-center">
         <div class="row mx-auto">

@@ -48,7 +48,8 @@ require './auth.php';
     <div class="container my-2 greet">
         <p>New Application</p>
     </div>
-    <div class="alert alert-success container col-8" role="alert">
+    
+    <!-- <div class="alert alert-success container col-8" role="alert">
         <h2 class="alert-heading">Application Success</h2>
         <hr>
         <p>You have successfully requested NOC letter for
@@ -57,6 +58,7 @@ require './auth.php';
         </p>
 
     </div>
+     -->
     <div class="alert alert-danger container col-8" role="alert">
         <h2 class="alert-heading">Application Failed</h2>
         <hr>
@@ -69,6 +71,7 @@ require './auth.php';
         </p>
 
     </div>
+    
     <div class="container my-3" id="content">
         <div class="bg-light p-5 rounded">
             <form class="row g-3" action="<?php echo htmlentities($_SERVER['PHP_SELF']) ?>" method="POST">

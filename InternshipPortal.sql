@@ -7,28 +7,28 @@
 -- Server version: 8.0.31-0ubuntu2
 -- PHP Version: 8.1.7-1ubuntu3.1
 
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
 
+
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
+
 
 --
 -- Database: `InternshipPortal`
 --
-CREATE DATABASE IF NOT EXISTS `InternshipPortal` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+CREATE DATABASE IF NOT EXISTS `InternshipPortal` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `InternshipPortal`;
 
--- --------------------------------------------------------
 
---
 -- Table structure for table `Announcements`
---
-
 CREATE TABLE `Announcements` (
   `ID` int NOT NULL,
   `created_by` varchar(255) NOT NULL,
@@ -46,14 +46,10 @@ CREATE TABLE `Announcements` (
   `perks` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'Active',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- --------------------------------------------------------
 
---
 -- Table structure for table `Announcement_applications`
---
-
 CREATE TABLE `Announcement_applications` (
   `ID` int NOT NULL,
   `announcement_id` int NOT NULL,
@@ -63,14 +59,10 @@ CREATE TABLE `Announcement_applications` (
   `location` varchar(255) NOT NULL,
   `resume/cv` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- --------------------------------------------------------
 
---
 -- Table structure for table `Applicant_Details`
---
-
 CREATE TABLE `Applicant_Details` (
   `ID` int NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -81,14 +73,10 @@ CREATE TABLE `Applicant_Details` (
   `location` varchar(255) NOT NULL,
   `resume/cv` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- --------------------------------------------------------
 
---
 -- Table structure for table `Applications`
---
-
 CREATE TABLE `Applications` (
   `ID` int NOT NULL,
   `student_id` int NOT NULL,
@@ -101,59 +89,44 @@ CREATE TABLE `Applications` (
   `Incharge` varchar(255) NOT NULL,
   `address_to` varchar(255) NOT NULL DEFAULT 'Manager',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- --------------------------------------------------------
 
---
 -- Table structure for table `Company_Details`
---
-
 CREATE TABLE `Company_Details` (
   `ID` int NOT NULL,
   `name` varchar(255) NOT NULL,
   `location` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- --------------------------------------------------------
 
---
 -- Table structure for table `Users`
---
-
 CREATE TABLE `Users` (
   `id` int NOT NULL,
-  `google_id` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `user_type` enum('Student','Admin','Staff','Office','Tpo') COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `google_id` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `user_type` enum('Student','Admin','Staff','Office','Tpo') COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 
 --
 -- Indexes for dumped tables
---
-
---
 -- Indexes for table `Announcements`
 --
 ALTER TABLE `Announcements`
   ADD PRIMARY KEY (`ID`);
-
---
 -- Indexes for table `Announcement_applications`
---
 ALTER TABLE `Announcement_applications`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `announcement_id` (`announcement_id`);
-
 --
 -- Indexes for table `Applicant_Details`
 --
 ALTER TABLE `Applicant_Details`
   ADD PRIMARY KEY (`ID`);
-
 --
 -- Indexes for table `Applications`
 --
@@ -161,78 +134,57 @@ ALTER TABLE `Applications`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `company_id` (`company_id`),
   ADD KEY `Student_ID` (`student_id`);
-
 --
 -- Indexes for table `Company_Details`
 --
 ALTER TABLE `Company_Details`
   ADD PRIMARY KEY (`ID`);
-
 --
 -- Indexes for table `Users`
 --
 ALTER TABLE `Users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `google_id` (`google_id`);
-
 --
 -- AUTO_INCREMENT for dumped tables
---
-
---
 -- AUTO_INCREMENT for table `Announcements`
 --
 ALTER TABLE `Announcements`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `Announcement_applications`
 --
 ALTER TABLE `Announcement_applications`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `Applicant_Details`
 --
 ALTER TABLE `Applicant_Details`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT;
 
---
+
 -- AUTO_INCREMENT for table `Applications`
 --
 ALTER TABLE `Applications`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `Company_Details`
 --
 ALTER TABLE `Company_Details`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `Users`
 --
 ALTER TABLE `Users`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
-
---
 -- Constraints for dumped tables
---
-
---
 -- Constraints for table `Announcement_applications`
 --
 ALTER TABLE `Announcement_applications`
   ADD CONSTRAINT `Announcement_applications_ibfk_1` FOREIGN KEY (`announcement_id`) REFERENCES `Announcements` (`ID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
---
+
 -- Constraints for table `Applications`
 --
 ALTER TABLE `Applications`
   ADD CONSTRAINT `Applications_ibfk_2` FOREIGN KEY (`company_id`) REFERENCES `Company_Details` (`ID`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   ADD CONSTRAINT `Student_ID` FOREIGN KEY (`student_id`) REFERENCES `Applicant_Details` (`ID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
